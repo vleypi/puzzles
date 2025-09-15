@@ -1,9 +1,9 @@
 import Link from "next/link"
 
 
-export const Tool = ({ children, className = '', hover = false, title = '', description = '', color = '', ...props }) => {
+export const Tool = ({ children, className = '', href = '', hover = false, title = '', description = '', color = '', ...props }) => {
     return (
-      <Link href={'/create-set'}>
+      <Link href={href}>
         <div 
           className={`text-card-foreground flex flex-col gap-6 py-6 group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer border-0 bg-white rounded-2xl overflow-hidden shadow-sm ${className}`} 
           {...props}
