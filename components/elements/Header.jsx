@@ -12,7 +12,7 @@ export const Header = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/25">
                 <span className="text-white font-bold text-lg">PZ</span>
               </div>
-              <span className="text-xl font-bold text-white">Puzzles</span>
+              {/* <span className="text-xl font-bold text-white">Puzzles</span> */}
             </a>
           </div>
 
