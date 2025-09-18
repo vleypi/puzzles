@@ -10,13 +10,24 @@ export default function SettingsPage() {
       <main className="container mx-auto px-4 py-8">
         <div className="w-full max-w-4xl mx-auto">
           {/* Заголовок */}
+
+          <div className="mb-8">
+            <Link href="/" className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors text-[15px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left mr-2">
+                <path d="m12 19-7-7 7-7"></path>
+                <path d="M19 12H5"></path>
+              </svg>
+              Назад на главную
+            </Link>
+          </div>
+
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-foreground">Настройки</h1>
           </div>
 
           <div className="space-y-8">
             {/* Секция подписки */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 text-white">
+            {/* <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 text-white">
               <div className="flex items-center justify-between">
                 <div>
                   <h2 className="text-xl font-semibold mb-2">Подписка</h2>
@@ -26,7 +37,7 @@ export default function SettingsPage() {
                   Подписаться сейчас
                 </button>
               </div>
-            </div>
+            </div> */}
 
             {/* Личная информация */}
             <div className="bg-card rounded-2xl p-6">
@@ -58,7 +69,7 @@ export default function SettingsPage() {
                 </div>
                 <div className="md:col-span-2">
                   <div className="flex items-center justify-between p-4 rounded-xl bg-muted/30">
-                    <span className="text-foreground">Vladimir8734</span>
+                    <span className="text-foreground">Vladimir</span>
                     <button className="text-primary hover:text-primary/80 transition-colors text-sm">
                       Редактировать
                     </button>
@@ -213,14 +224,14 @@ export default function SettingsPage() {
                   </button>
                 </div>
 
-                {/* Facebook */}
+                {/* VK */}
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-medium text-foreground">Подключить учетную запись Facebook</h3>
+                    <h3 className="font-medium text-foreground">Подключить учетную запись VK</h3>
                     <p className="text-muted-foreground text-sm">Для быстрого входа</p>
                   </div>
                   <button className="px-4 py-2 rounded-xl border border-border text-foreground text-sm hover:bg-muted/30 transition-all">
-                    Привязать Facebook
+                    Привязать VK
                   </button>
                 </div>
 
